@@ -8,7 +8,7 @@ Esta es un aplicación de noticias para aprender el desarrllo de pruebas unitari
 
 En este caso se probó el caso exitoso con datos correctos y el caso que genera la excepción, como se ve a continuación.
 
-´´´dart
+```dart
 class MockNewsApiSerice extends Mock implements NewsApiService{}
 
 void main(){
@@ -42,7 +42,7 @@ void main(){
   });
 }
 
-´´´
+```
 
 También las clases de datos newsEntity y newsModel, las cuales es necesario probar la serialización a nivel Json y las funciones auxiliares de igualdad y hashCode, las cuales es necesario hacer las pruebas. Aquí no hice las pruebas de todos los campos, porque se alarga mucho, pero en la realidad hay que encontrar una manera de probar los campos de la serialización de una manera mas automática y no tan manual.
 
@@ -64,7 +64,7 @@ También hay un timer que queda abierto, y si uno termina el widgetTest antes de
 
 La solución a esto fué crear prácticamente todo el entorno del app inyectando el caso de uso mockeado con la data, la cual permite navegar desde el splash hasta la pantalla del newsListScreen como se ve a continuación:
 
-´´´dart
+```dart
 class MockNewsApiSerice extends Mock implements NewsApiService {}
 
 void main() {
@@ -99,7 +99,7 @@ void main() {
 
   });
 }
-´´´
+```
 
 Para el resto de pruebas de widget el reto es poder encontrar los componenetes con find y probar en que pantalla está para la navegación.
 
