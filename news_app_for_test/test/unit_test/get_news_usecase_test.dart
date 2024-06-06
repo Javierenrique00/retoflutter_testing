@@ -5,7 +5,7 @@ import 'package:news_app_for_test/domain/usecases/get_news_usecase.dart';
 import 'package:news_app_for_test/infrastructure/models/news_model.dart';
 import 'package:news_app_for_test/infrastructure/service/news_api_service.dart';
 
- class MockNewsApiSerice extends Mock implements NewsApiService{}
+class MockNewsApiSerice extends Mock implements NewsApiService{}
 
 void main(){
 

@@ -18,6 +18,8 @@ dev_dependencies:
   mocktail: ^1.0.3
   flutter_test:
     sdk: flutter
+  integration_test:
+    sdk: flutter
 
 flutter:
   uses-material-design: true
